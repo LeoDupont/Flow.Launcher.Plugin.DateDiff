@@ -1,0 +1,25 @@
+{
+	"name": "datediff-flow-launcher-plugin",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"type": "module",
+	"scripts": {
+		"test": "jest",
+		"dev:set-junction": "mklink /j \"%appdata%/FlowLauncher/Plugins/dev_DateDiff\" \".\"",
+		"dev:remove-junction": "rmdir \"%appdata%/FlowLauncher/Plugins/dev_DateDiff\""
+	},
+	"author": "LeoDupont",
+	"license": "ISC",
+	"dependencies": {
+		"luxon": "^2.3.1"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.16.11",
+		"@types/jest": "^27.4.1",
+		"@types/luxon": "^2.3.1",
+		"babel-jest": "^27.5.1",
+		"jest": "^27.5.1",
+		"ts-jest": "^27.1.4"
+	}
+}

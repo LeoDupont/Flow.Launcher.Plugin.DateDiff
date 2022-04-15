@@ -1,0 +1,12 @@
+{
+	"ID": "6bfc4672-5550-4d40-b2dc-53093a2417a0",
+	"ActionKeyword": "dd",
+	"Name": "DateDiff",
+	"Description": "Difference between two dates (doc on website)",
+	"Author": "LeoDupont",
+	"Version": "1.0.0",
+	"Language": "executable",
+	"Website": "https://github.com/LeoDupont/Flow.Launcher.Plugin.DateDiff",
+	"ExecuteFileName": "start.bat",
+	"IcoPath": "images\\icon.png"
+}
