@@ -15,16 +15,16 @@ Where:
 - `<toDate>` is the date to end at
 - `<unit>` is the unit of time to compute the difference in (optional) (see [Units](#units) below)
 
-![usage screenshot 1](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.WordReference/main/.readme-images/example1.png)
+![usage screenshot 1](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.DateDiff/main/.readme-images/example1.png)
 
 
-![usage screenshot 2](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.WordReference/main/.readme-images/example2.png)
+![usage screenshot 2](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.DateDiff/main/.readme-images/example2.png)
 
 
-![usage screenshot 3](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.WordReference/main/.readme-images/example3.png)
+![usage screenshot 3](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.DateDiff/main/.readme-images/example3.png)
 
 
-![usage screenshot 4](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.WordReference/main/.readme-images/example4.png)
+![usage screenshot 4](https://raw.githubusercontent.com/LeoDupont/Flow.Launcher.Plugin.DateDiff/main/.readme-images/example4.png)
 
 ### Date formats
 
