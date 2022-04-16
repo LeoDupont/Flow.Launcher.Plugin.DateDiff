@@ -1,4 +1,4 @@
-import { DateTime, Info, Settings } from "luxon";
+import { DateTime, Info } from "luxon";
 import { localeNumber } from "./helpers.js";
 
 export const UNITS = {

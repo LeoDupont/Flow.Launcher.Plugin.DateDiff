@@ -70,7 +70,7 @@ export function query(parameters) {
 	sendResult([{
 		Title: dateDiffStr,
 		SubTitle: `From ${displayDate(fromDate)} to ${displayDate(toDate)}`,
-		IcoPath: Config.iconPath,
+		IcoPath: Config.IcoPath,
 		score: 0,
 	}]);
 

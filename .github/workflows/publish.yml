@@ -1,0 +1,54 @@
+# Source : https://github.com/Flow-Launcher/Flow.Launcher.Plugin.HelloWorldNodeJS/tree/main/.github/workflows
+
+name: Publish Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - .github/workflows/*
+      - .readme-images/*
+      - .gitignore
+      - README.md
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '17.3.0'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test
+        run: npm test
+
+      - name: Prune dependencies
+        run: npm prune --production
+
+      - name: Zip package
+        run: zip -r Flow.Launcher.Plugin.DateDiff.zip . -x '*.git*' -x '.readme-images/*'
+
+      - name: Get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: 'plugin.json'
+          prop_path: 'Version'
+
+      - run: echo ${{steps.version.outputs.prop}}
+
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          files: 'Flow.Launcher.Plugin.DateDiff.zip'
+          tag_name: "v${{steps.version.outputs.prop}}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
