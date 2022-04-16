@@ -14,7 +14,7 @@ export function query(parameters) {
 
 	let fromDate, toDate, unit;
 
-	const args = parameters.split(" ");
+	const args = parameters.trim().split(" ");
 
 	switch (args.length) {
 
@@ -23,6 +23,7 @@ export function query(parameters) {
 		 * => `<TODAY> <toDate> <DEFAULT_UNIT>`
 		 */
 		case 1:
+			if (!args[0]) { return sendResult(); }
 			fromDate = parseDate("today");
 			toDate = parseDate(args[0]);
 			break;
@@ -33,6 +34,7 @@ export function query(parameters) {
 		 * => `<TODAY> <toDate> <unit>`
 		 */
 		case 2:
+			if (!args[0] || !args[1]) { return sendResult(); }
 			if (Object.keys(UNITS).includes(args[1])) {
 				fromDate = parseDate("today");
 				toDate = parseDate(args[0]);
@@ -49,6 +51,7 @@ export function query(parameters) {
 		 * => `<fromDate> <toDate> <unit>`
 		 */
 		case 3:
+			if (!args[0] || !args[1] || !args[2]) { return sendResult(); }
 			fromDate = parseDate(args[0]);
 			toDate = parseDate(args[1]);
 			unit = args[2];
@@ -70,6 +73,8 @@ export function query(parameters) {
 		IcoPath: Config.iconPath,
 		score: 0,
 	}]);
+
+	return dateDiffStr;
 }
 
 function sendResult(result = []) {
