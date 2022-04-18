@@ -58,11 +58,9 @@ Just go to https://nodejs.org/ and download the LTS ("Long Term Support") versio
 
 ## 2. Install the plugin
 
-> Waiting to be listed on Flow Launcher's plugin directory.
-
-You can install the latest version of this plugin by running the following command in Flow Launcher:
+You can find this plugin in Flow's Plugin Store (in the app's settings), or by directly running this command in Flow Launcher:
 ```
-pm install https://github.com/LeoDupont/Flow.Launcher.Plugin.DateDiff/releases/latest/download/Flow.Launcher.Plugin.DateDiff.zip
+pm install DateDiff
 ```
 
 # Credits
