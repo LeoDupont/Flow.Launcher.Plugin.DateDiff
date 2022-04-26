@@ -6,11 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore:
-      - .github/workflows/*
-      - .readme-images/*
-      - .gitignore
-      - README.md
+    paths:
+      - plugin.json
 
 jobs:
   publish:
