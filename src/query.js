@@ -71,12 +71,26 @@ export function query(parameters) {
 		Title: dateDiffStr,
 		SubTitle: `From ${displayDate(fromDate)} to ${displayDate(toDate)}`,
 		IcoPath: Config.IcoPath,
-		score: 0,
+		score: 100,
 	}]);
 
 	return dateDiffStr;
 }
 
 function sendResult(result = []) {
+	result.push(getHelpResult());
 	console.log(JSON.stringify({ result }));
+}
+
+function getHelpResult() {
+	return {
+		Title: "DateDiff usage: <fromDate?> <toDate> <unit?>",
+		SubTitle: "Click to open documentation",
+		IcoPath: Config.IcoPath,
+		jsonRPCAction: {
+			method: "open_datediff_url",
+			parameters: [Config.DocUrl],
+		},
+		score: 0,
+	}
 }

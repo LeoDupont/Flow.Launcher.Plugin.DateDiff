@@ -12,7 +12,8 @@
 	"author": "LeoDupont",
 	"license": "ISC",
 	"dependencies": {
-		"luxon": "^2.3.1"
+		"luxon": "^2.3.1",
+		"open": "^8.4.0"
 	},
 	"devDependencies": {
 		"@babel/plugin-transform-runtime": "^7.17.0",
