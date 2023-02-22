@@ -4,9 +4,9 @@
 	"Name": "DateDiff",
 	"Description": "Difference between two dates (documentation on website)",
 	"Author": "LeoDupont",
-	"Version": "1.1.0",
-	"Language": "executable",
+	"Version": "1.1.1",
+	"Language": "javascript",
 	"Website": "https://github.com/LeoDupont/Flow.Launcher.Plugin.DateDiff",
-	"ExecuteFileName": "start.bat",
+	"ExecuteFileName": "./src/main.js",
 	"IcoPath": "images\\icon.png"
 }
