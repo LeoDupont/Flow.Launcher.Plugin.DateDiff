@@ -50,14 +50,6 @@ The last parameter is an optional unit of time to compute the difference in.
 
 # Installation
 
-## 1. Install Node.js
-
-This plugin is written in JavaScript, so you need to install Node.js to use it with Flow Launcher.
-
-Just go to https://nodejs.org/ and download the LTS ("Long Term Support") version of Node.js.
-
-## 2. Install the plugin
-
 You can find this plugin in Flow's Plugin Store (in the app's settings), or by directly running this command in Flow Launcher:
 ```
 pm install DateDiff
